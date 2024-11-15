@@ -1,0 +1,46 @@
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* / *element selektor*/ */
+h3{
+    color: cornflowerblue;
+    
+}
+
+h4{
+    color:#333;
+    background-color: rgb(139, 139, 244);
+}
+p{
+font-weight: 700;
+font-size: 2rem;
+}
+div {
+width: 400px;
+height: 400px;
+background-color:cadetblue;
+text-align: center;
+}
+
+.amet{
+ background-color: crimson;
+}
+
+.naslov{
+    color: crimson;
+}
+.rgb{
+    color: rgb(22, 10, 81);
+}
+
+/*selektor klase*/
+#naslov1 {
+    color: forestgreen;
+}
+
+/*selektor id*/
+#naslov{
+    color: darkred;
+}
