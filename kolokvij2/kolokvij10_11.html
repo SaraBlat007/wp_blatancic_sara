@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 300px;
+            width: 150px;
+        }
+
+        .crna{
+            background-color: rgb(0, 0, 0);
+            display: inline-block;
+        }
+        .zuta{
+            background-color: rgb(248, 240, 6);
+            display: inline-block;
+
+        }
+        .crvena{
+            background-color: red;
+            display: inline-block;
+        }
+
+    body {
+      border: 1px;
+     border-color:black
+    }
+  
+    .container {
+      height: 7vh;
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: 1fr 1fr 1.5fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .item {
+      font-size: 5rem;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: blueviolet;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .astronaut{
+      background-color: rgb(255, 0, 217);
+      order: 1;
+      grid-column-start: span 2;
+    }
+
+    .astronaut2{
+      background-color: rgb(0, 179, 255);
+      order: 1;
+      grid-column-start: span 2 ;
+    }
+    .astronaut3{
+      background-color: rgb(20, 126, 6);
+      grid-row:  span 2;
+    }
+
+
+    </style>
+</head>
+<body>
+    <h3>Zastava Belgije</h3>
+    <div class="crna"></div>
+    <div class="zuta"></div>
+    <div class="crvena"></div>
+    <div class="container"></div>
+    <div class="item astronaut">👨‍🚀</div>
+    <div class="item astronaut2">👨‍🚀👨‍🚀</div>
+    <div class="item astronaut3">👨‍🚀</div>
+
+
+</body>
+</html>
+    
+   
+
