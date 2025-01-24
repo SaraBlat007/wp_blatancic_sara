@@ -7,7 +7,262 @@
 
 </head>
 <body>
-    <h2>Recepti</h2>
     
+    <style>
+
+body{
+        font-family:Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box;
+        background-color: #89a5e4;
+    }
+    header {
+       background-image: url('pozadina.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 40px 10px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+    }
+
+    main {
+        display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+    }
+    section {
+        grid-column: span 3;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+    .recept img {
+        max-width: 100%;
+            border-radius: 10px;
+            border: 2px solid #ddd;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, opacity 0.3s ease;
+    }
+    .recept img:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #32049c;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: #483171;
+        }
+
+        p, li {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+    footer {
+        background-color: #32049c;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+}
+footer a {
+            color: #483171;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        #kontakt {
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 30px auto;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #kontakt input, #kontakt button {
+            font-size: 1rem;
+            padding: 10px;
+            margin: 10px 0;
+            width: calc(100% - 20px);
+            border: 1px solid #483171;
+            border-radius: 5px;
+        }
+
+        #kontakt input:focus, #kontakt button:hover {
+            border-color: #32049c;
+            outline: none;
+            box-shadow: 0 0 5px rgba(48, 14, 26, 0.5);
+        }
+
+        #kontakt button {
+            background-color: #32049c;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #kontakt button:hover {
+            background-color: #32049c;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            section {
+                padding: 15px;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            p, li {
+                font-size: 0.9rem;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    
+
+
+
+    </style>
+</body>
+<header>
+<h1>Rcepti za svaki dan</h1>
+<p>Recepti s kojima će svaki zalogaj biti ukusan.</p>
+</header>
+<section id="Predjela">
+    <h2>Predjela</h2>
+    <div class="recept">
+    <img src="https://recepti-api.index.hr/img/preview/large/recipe/f0fa347a-9a0e-4017-b754-1a706c85b354/shutterstock_696270859.jpg" alt="Predjelo">
+    <h3>Kremasta juha od bundeve</h3>
+    <p>Iako recepti od bundeve iskaču sa svih strana, nekima nije toliko poznata. Ako je još niste ni probali, juha je dobar izbor za početak. Nije slatka ako ste to mislili, a sami si možete dodati ljutine koliko vam paše.</p>
+    <hr>
+    <h3>Sastojci:</h3>
+    <li>1,5kg bundeve</li>
+    <li>2 žlice maslinovog ulja</li>
+    <li>2 žlice maslaca</li>
+    <li>1 crveni luk</li>
+    <li>1 l pilećeg ili povrtnog temeljca </li>
+    <li>50g grčkog jogurta</li>
+    <hr>
+    <h4>Priprema :</h4>
+    <p>Zagrijte pećnicu na 200 stupnjeva. Lim za pečenje lagano namastite običnim ili uljem u spreju. 
+        Bundevu ogulite, narežite na manje komade, stavite na pripremljeni lim za pečenje, poškropite maslinovim uljem i posolite. U jednom sloju rasporedite po limu.
+        Pecite bundevu oko sat vremena te na pola vremena promiješajte. Pecite dok ne omekša.
+        U međuvremenu na srednje jakoj vatri u velikom loncu zagrijte maslac. Ubacite sitno sjeckani luk 
+        i pržite 4 do 5 minuta miješajući. Umiješajte bundevu i temeljac. Posolite, popaprite po ukusu. 
+        Ostavite da juha zakuha, zatim ju sklonite sa štednjaka. Štapnim mikserom prođite kroz juhu da ju 
+        ispasirate, dodajte grčki jogurt i izmiješajte. Poslužite vruće. </p>
+
+
+
+    </div>
+</section>
+<section id="Glavna-jela">
+    <h2>Glavna jela</h2>
+    <div class="recept">
+    <img src="https://recepti-api.index.hr/img/preview/large/recipe/1da41dc0-d832-46ba-adf0-4a2e16b993b0/Gratinirani%20pure%C4%87i%20odrezak.jpg" alt="Glavno jelo">
+    <h3>Gratinirani pureći odrezak s rajčicom i mozzarellom</h3>
+    <p>Treba vam ideja za jednostavan ručak kojeg možete pripremiti preko tjedna? Ova sočna pureća prsa 
+        nadjevena pršutom, rajčicama i mozzarellom idealno su rješenje. 
+        Poslužite ih uz kuhani krumpir, rižu ili tikvice.</p>
+     <hr>
+     <h3>Sastojci:</h3>
+     <li>200 gpurećih prsa, tanko rezanih</li>
+     <li>50 gbrašna</li>
+     <li>100 mlbijelog vina</li>
+     <li>50 gmaslaca</li>
+     <li>50 gpršuta</li>
+     <li>100 grajčice, narezane na tanke ploške</li>
+     <li>100 gmozzarelle, narezane na tanke ploške</li>
+     <hr>
+     <h4>Priprema:</h4>
+     <p>U tavi zagrijte ulje. Tanko narezanu pureću šniclu s jedne strane uvaljajte u brašno i ispecite u zagrijanom ulju. 
+        Ispecite pršut. Dodajte pršut, kratko ispecite i izvadite.Dodajte temeljac i vino.
+        U tavu s mesom ulijte bijelo vino, temeljac, dodajte maslac te kratko prokuhajte. Posolite, popaprite i dodajte origano.
+        Nadjenite pureću šniclu i zapecite
+        Pršut stavite na šniclu, rajčicu na pršut i sve završite s mozzarellom. Zapecite u pećnici na 220 stupnjeva dok se mozzarella ne rastopi i zapeče.
+        Poslužite uz prilog
+        Poslužite uz kuhani krumpir ili ukoliko ne jedete ugljikohidrate stavite pečene tikvice.
+
+     </p>
+    
+    </div>
+
+    <section id="Desert">
+        <h2>Desert</h2>
+        <div class="recept">
+        <img src="https://recepti-api.index.hr/img/preview/large/recipe/1e1a8931-8719-4f28-9c14-9c044e2e6f49/shutterstock_372701539.jpg" alt="Desert">
+        <h3>Lava cake s bijelom čokoladom</h3>
+        <p>Ako ste ljubitelj bijele čokolade ovo je pravi recept za vas. Ukusan, mekan i vizualno impresivan desert gotov je za manje od pola sata. Poslužiti ga možete uz kuglicu sladoleda i bobičasto voće. </p>
+        <hr>
+        <h3>Sastojci:</h3>
+        <li>120 gbijele čokolade, narezane na manje komade</li>
+        <li>120 gmaslaca</li>
+        <li>2 većajaja</li>
+        <li>2 žumanjka</li>
+        <li>1 žličica ekstrakta vanilije</li>
+        <li>100 g šećera u prahu</li>
+        <li>60 g glatkog brašna</li>
+        <hr>
+       
+        <h4>Priprema:</h4>
+        <p>Pećnicu zagrijte na 220 stupnjeva, a četiri keramičke posudice za souffle dobro namastite i 
+            poslažite na lim za pečenje. Rastopite čokoladu. Čokoladu i maslac stavite u posudu i u intervalima
+             topite u mikrovalnoj pećnici po 20 sekundi. Nakon 20 sekundi oprezno izvadite, promiješajte i 
+             ponovite postupak dok se čokolada ne rastopi. Čokoladu i maslac umjesto u mikrovalnoj možete otopiti
+              i na pari. Sjedinite sastojke. Rastopljenoj čokoladi dodajte jaja, žumanjke i ekstrakt vanilije
+               te sastojke sjedinite pomoću pjenjače. Ubacite brašno i šećer i miješajte dok ne dobijete 
+               homogenu smjesu. Pecite. Dobivenu smjesu ravnomjerno rasporedite u četiri keramičke posude. 
+               Pecite 12 do 14 minuta. Poslužite. Izvadite iz pećnice, oprezno pomoću noža obrubite, preokrenite
+                na manji tanjur i podignite posudicu. Poslužite toplo s kuglicom sladoleda ili bobičastim voćem. </p>
+        
+
+
+
+</div>
+</section>
+<div id="kontakt">
+    <h3>Kontaktirajte nas</h3>
+    <input type="text" placeholder="Vaše ime">
+    <input type="email" placeholder="Vaš email">
+    <button>Pošalji</button>
+</div>
+<footer>
+    <p>© 2025 Recepti. Sva prava pridržana.</p>
+    <a href="#">Facebook</a>
+    <a href="#">Instagram</a>
+</footer>
 </body>
 </html>
